@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,300;1,400&family=Roboto:ital,wght@0,300;1,300&display=swap');
+
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+
+
+}
+
+body {
+    scroll-behavior: smooth;
+    /* font-family : 'Montserrat', sans-serif; ==> Roboto*/
+    /* font-family: 'Akaya Kanadaka', cursive; ==> Akaya Kanadaka*/
+    background-color: #ABD0EB;
+    overflow-x: hidden;
+
+}
+
+:roots {
+    --primary: indianred;
+    --secondary: rgba(15, 10, 29, 0.849);
+    --light: #2f3640;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+.nav1 {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 2px 0px 3px grey;
+    text-align: center;
+    text-shadow: -4px 4px 2px rgba(0, 0, 0, 0.17);
+    font-weight: bold;
+}
+
+.nav1 .left {
+    flex-basis: 50%;
+    letter-spacing: 2px;
+    color: var(--primary);
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 0px 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav1 .left a {
+    text-decoration: none;
+    color: indianred;
+    font-weight: bold;
+    margin: 0px 5px;
+}
+
+.right {
+    flex-basis: 10%;
+}
+
+.right i {
+    font-size: 1.5vw;
+    margin: 0px 3px;
+    /* background-color: var(--primary); */
+}
+
+.nav1.right i:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    color: red;
+}
+
+.nav2 {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.nav2-left .nav2-center .nav2-right {
+    flex-basis: 30%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.nav2 .nav2-left i {
+    margin-left: 15px;
+}
+
+.nav2-center h1 {
+    color: indianred;
+    font-size: 2.5vw;
+    letter-spacing: 10px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 37rem;
+}
+
+.nav2-center h2 {
+    color: black;
+    font-family: 'Akaya Kanadaka', cursive;
+    margin-bottom: 50px;
+}
+
+.nav2-center p {
+    color: grey;
+    font-size: 1.5vw;
+    margin-top: 3px;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+.nav2 .nav2-right i {
+    margin: 0px 5px;
+}
+
+.nav3 {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+
+.nav3 ul {
+    list-style: none;
+    text-align: center;
+    color: black;
+
+}
+
+.nav3 ul li {
+    display: inline-block;
+    width: 180px;
+    position: relative;
+
+}
+
+.nav3 ul li a {
+    text-decoration: none;
+    color: indianred;
+    display: block;
+    font-weight: 600;
+    font-size: 1vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav3 ul li a:hover {
+    color: black;
+}
+
+.nav3 ul li i {
+    color: black;
+}
+
+.nav3 ul ul {
+    position: absolute;
+    top: 70px;
+    left: 0%;
+    display: none;
+}
+
+.nav3 ul ul li {
+    background-color: #fff;
+    border-bottom: 1px solid indianred;
+
+}
+
+.nav3 ul li:hover>ul {
+    color: rgb(0, 0, 0);
+    display: block;
+}
+
+.featured {
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1)20%, rgb(255, 255, 255, 0.2)), url(/g1.jpg);
+    background-position: top;
+    background-size: cover;
+
+}
+
+.featured-text {
+    max-width: 500px;
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 2vw;
+    letter-spacing: 5px;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+.featured-text button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: indianred;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 20px 0px;
+    border-radius: 10px;
+}
+
+.latest {
+    padding: 50px 100px;
+}
+
+.product-intro {
+    text-align: center;
+}
+
+.product-intro>h1 {
+    color: indianred;
+    letter-spacing: 0.2rem;
+    font-size: 4vw;
+    font-weight: bolder !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product-intro>h1 span {
+    color: black;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+.product-intro>p {
+    font-family: 'Akaya Kanadaka', cursive;
+    font-weight: 500;
+    color: black;
+    font-size: 1.5vw;
+}
+
+.cards>h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin: 4rem 0rem;
+}
+
+.card-container .cards {
+    flex-basis: 20%;
+    padding: 1rem;
+    position: relative;
+}
+
+.card-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.card img {
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.cards i {
+    color: goldenrod;
+    margin: 10px 0;
+}
+
+.cards button {
+    width: 90px;
+    height: 25px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    margin: 10px 1px;
+    padding: 3px;
+    border: none;
+}
+
+.cards button:hover {
+    background-color: green;
+}
+
+.cards:hover img,
+.cards:hover h1 {
+    width: 90%;
+    height: 99%;
+    color: indianred;
+}
+
+.card-container .cards:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+    border-radius: 10px;
+}
+
+.cards::before {
+    content: "50% Off";
+    width: 25%;
+    height: 25px;
+    background-color: indianred;
+    color: white;
+    line-height: 25px;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    padding: 0px 4px;
+    transform: rotate(-20deg);
+
+}
+
+.trends {
+    padding: 60px 100px;
+}
+
+.trends .product-intro>p {
+    font-size:1vw;
+}
+
+.swiper {
+    width: 90%;
+    height: 90%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18vw;
+    /* background: #fff; */
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 20px;
+}
+
+footer {
+    background-color: #2581abb0;
+    /* background-image: url(/wave.svg); */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10rem;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+
+}
+
+footer div {
+    flex-basis: 30%;
+    cursor: pointer;
+}
+
+footer h1 {
+    font-size: 3.5vw;
+    letter-spacing: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer h1 span {
+    color: red;
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: 50px;
+}
+
+footer p {
+    font-size: 1.5vw;
+    font-family: 'Akaya Kanadaka', cursive;
+    color: whitesmoke;
+
+
+}
+
+footer i {
+
+    margin: 0px 8px;
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width:500px) {
+
+    body {
+        scroll-behavior: smooth;
+        
+        background-color: #ABD0EB;
+        overflow-x: hidden;
+    
+
+    }
+
+    .nav1 {
+        box-shadow: 0px 0px 5px grey;
+        width:57rem;
+        /* overflow-x:scroll; */
+
+
+    }
+
+    .nav1 .left span {
+        font-size: 25px;
+
+    }
+
+    .nav1 .left a {
+        font-size: 18.5px;
+
+    }
+
+    .right i {
+        font-size: 27px;
+        margin: 0px -35px;
+    }
+
+    .nav2-center {
+        margin-left: 200px;
+    }
+
+    .nav2-center>h1 {
+        font-size: 40px;
+    }
+
+    .nav2-center h1 span {
+        font-size: 40px;
+        margin-left: 20px;
+        position: absolute;
+    }
+
+    .nav2-center>p {
+        font-size: 25px;
+        margin-left: 180px;
+    }
+
+    .nav3 {
+        display: none;
+    }
+
+    .featured {
+        margin: 35px 70px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 1)20%, rgb(255, 255, 255, 0.2)), url(/g1.jpg);
+        background-position: top;
+        background-size: cover;
+        width: 180%;
+        height: 60%;
+    }
+
+    .featured-text button {
+        margin: 0px 70px;
+    }
+
+    .featured-text h2 {
+        font-size: 20px;
+    }
+
+    .latest {
+        padding: 50px 200px;
+        display: grid;
+
+    }
+
+    .product-intro {
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .product-intro>h1 {
+
+        letter-spacing: 0.2rem;
+        font-size: 4rem;
+
+    }
+
+    .product-intro>h1 span {
+        color: black;
+        font-family: 'Akaya Kanadaka', cursive;
+        font-size: 5rem;
+    }
+
+    .product-intro>p {
+
+        font-size: 1rem;
+    }
+
+    .card-container {
+        width: 160vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        margin: 5rem -5rem;
+    }
+    .card-container .cards {
+        flex-basis: 20%;
+        padding: 0.5rem;
+        position: relative;
+    }
+    /* .latest {
+        padding: 50px 100px;
+    }
+    .latest .product-intro h1{
+        font-size: 5rem;
+        display: flex;
+      
+    }
+
+    .trends {
+        width:10rem;
+      
+    }
+    .product-intro h1{
+        font-size:2rem;
+    }
+    .trends .product-intro>p {
+        font-size:1vw;
+    } */
+   
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
